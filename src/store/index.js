@@ -1,4 +1,4 @@
-import { ConfigureStore  } from "@reduxjs/toolkit";
+import { configureStore  } from "@reduxjs/toolkit";
 
 import {
     carsReducer,
@@ -13,7 +13,7 @@ import {
     changeCost
 } from './slices/formSlice';
 
-const store = ConfigureStore({
+const store = configureStore({
     reducer: {
         cars: carsReducer,
         form: formReducer
